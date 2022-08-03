@@ -90,6 +90,9 @@ td input.selecters{
     line-height: 1 !important;
     height: 10vh !important;
 }
+.pay-logo{
+    width: 20%;
+}
 
 /*Media Screen*/
 @media (max-width: 1200px) {

@@ -69,38 +69,39 @@
                     </div>
                 </div>
 
-                <div class="p-infos py-3 rounded-2">
+                <form class="p-infos py-3 rounded-2" action="" method="post" enctype="multipart/form-data">
                     <h3 class="text-center pb-2">Pessanger Information</h3>
 
                     <div class="d-flex align-items-center px-3">
                         <p class="w-30">Name</p>
-                        <p class="w-70">Mg Mg</p>
+                        <input type="text" name="username" id="username" class="w-70 border-0 selecters"
+                               placeholder="Enter Your Name" value="" required/>
                     </div>
                     <div class="px-3">
                         <span class="">Gender</span>
                         <div class=" mx-3">
-                            <input type="radio" name="gender" id="" value="male"/> <span class="me-3">Male</span>
-                            <input type="radio" name="gender" id="" value="female"/> <span class="me-3">Female</span>
-                            <input type="radio" name="gender" id="" value="other"/> <span class="me-3">Other</span>
+                            <input type="radio" name="gender" id="mgender" value="male"/> <span class="me-3">Male</span>
+                            <input type="radio" name="gender" id="fgender" value="female"/> <span class="me-3">Female</span>
+                            <input type="radio" name="gender" id="ogender" value="other"/> <span class="me-3">Other</span>
                         </div>
                     </div>
 
                     <div class="d-flex align-items-center px-3">
                         <p class="w-30">NRC</p>
-                        <input type="text" name="" id="" class="w-70 border-0 selecters"
-                               placeholder="12/PaKhaKa(N)123456"/>
+                        <input type="text" name="NRC" id="NRC" class="w-70 border-0 selecters"
+                               placeholder="12/PaKhaKa(N)123456" required />
                     </div>
 
                     <div class="d-flex align-items-center px-3">
                         <p class="w-30">Phone No</p>
-                        <input type="text" name="" id="" class="w-70 border-0 selecters"
-                               placeholder="0978948687"/>
+                        <input type="text" name="phone-no" id="phone_no" class="w-70 border-0 selecters"
+                               placeholder="0978948687" required />
 
                     </div>
 
                     <div class="d-flex align-items-center px-3">
                         <p class="w-30">Email</p>
-                        <input type="email" name="" id="" class="w-70 border-0 selecters"
+                        <input type="email" name="email" id="email" class="w-70 border-0 selecters"
                                placeholder="example@gmail.com"/>
 
                     </div>
@@ -108,32 +109,37 @@
 
                     <div class="d-flex align-items-center px-3">
                         <p class="w-30">Seat No</p>
-                        <span class="">00</span>
+                        <span class="" id="seat_no">00</span>
                     </div>
 
                     <label class="mx-3">Payment</label>
-                    <div class="payments d-flex align-items-center py-2">
-                        <a href="#" class="kpay w-25 text-decoration-none text-center">
-                            <img src="../assents/images/payments/kpayLogo.svg" class="w-50 bg-transparent"
-                                 alt="payment-image" title="Kpay"/>
-                            <p class="text-dark">Kpay</p>
-                        </a>
-                        <a href="#" class="kpay w-25 text-decoration-none text-center">
-                            <img src="../assents/images/payments/wave_money.svg" class="w-50 bg-transparent"
-                                 alt="payment-image" title="Wave Pay"/>
-                            <p class="text-dark">Wave Pay</p>
-                        </a>
+
+                    <div class="payments d-flex align-items-center mx-3">
+                        <div class="w-100 px-3">
+                            <input type="radio" name="payment" id="kpay" value="kpay" />
+                            <img src="../assents/images/payments/kpayLogo.svg" alt="Kpay Logo" class="pay-logo bg-transparent">
+                            <span class="d-block px-3">Kpay</span>
+                        </div>
+                        <div class="w-100 px-3">
+                            <input type="radio" name="payment" id="wavepay" value="wavepay" />
+                            <img src="../assents/images/payments/wave_money.svg" alt="Wavepay Logo" class="pay-logo bg-transparent">
+                            <span class="d-block px-3">Wave Pay</span>
+                        </div>
                     </div>
 
                     <div class="mx-4 text-end">
                         <input type="submit" name="" class="btn btn-primary me-0" id="" value="Book Now"/>
                     </div>
 
-                </div>
+                </form>
             </div>
 
         </div>
     </div>
+</section>
+
+<section class="container-fluid bg-primary footer text-center">
+    <p class="text-white-50">&copy; 2023 Travel Ticket Pick Design By TS Group</p>
 </section>
 
 <script src="../js/app.js"></script>
